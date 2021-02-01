@@ -64,3 +64,75 @@ a {
 .nav-link:hover::before {
   transform: scaleX(1);
 }
+
+/* welcome section */
+.welcome {
+  height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-heading {
+  font-size: 4em;
+  opacity: 0;
+  animation: slide-up-in 0.4s ease-in forwards;
+}
+
+.welcome-subheading {
+  margin: 1em 0 4em;
+  font-size: 1.5em;
+  opacity: 0;
+  animation: slide-up-in 0.4s 0.4s ease-in forwards;
+}
+
+@keyframes slide-up-in {
+  from {
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.welcome-about {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  border-radius: 9999px;
+  background-color: palevioletred;
+  font-size: 1.1em;
+  color: white;
+  opacity: 0;
+  transition: transform 0.2s ease-in-out;
+  animation: fade-in 0.8s 0.8s ease-in forwards;
+}
+
+.welcome-about:hover {
+  transform: scale(1.1);
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+.waving-hand {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: wiggle 2.5s 1.6s 1;
+}
+
+/* prettier-ignore */
+@keyframes wiggle {
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(14.0deg) }  
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate( 0.0deg) }  
+ 100% { transform: rotate( 0.0deg) }
+}
