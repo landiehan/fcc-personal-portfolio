@@ -136,3 +136,32 @@ a {
   60% { transform: rotate( 0.0deg) }  
  100% { transform: rotate( 0.0deg) }
 }
+
+/* about section */
+.about {
+  height: calc(100vh - 64px);
+  max-width: 376px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.about-heading {
+  margin: 2em 0 1em;
+  font-size: 3em;
+}
+
+.about-content {
+  font-size: 1.2em;
+}
+
+.about-content:first-of-type::first-letter {
+  font-size: 1.8em;
+}
+
+.about a[href*="http"] {
+  text-decoration: 2px underline dashed palevioletred;
+  color: palevioletred;
+}
