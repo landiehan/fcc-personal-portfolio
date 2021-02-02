@@ -123,11 +123,11 @@ a {
 .waving-hand {
   display: inline-block;
   transform-origin: 70% 70%;
-  animation: wiggle 2.5s 1.6s 1;
+  animation: wave 2.5s 1.6s 1;
 }
 
 /* prettier-ignore */
-@keyframes wiggle {
+@keyframes wave {
   0% { transform: rotate( 0.0deg) }
   10% { transform: rotate(14.0deg) }  
   20% { transform: rotate(-8.0deg) }
