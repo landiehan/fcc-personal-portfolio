@@ -344,3 +344,13 @@ a {
     transform: translateY(-1rem) rotate(15deg);
   }
 }
+
+/* footer */
+.footer {
+  box-shadow: inset 0 1px palevioletred;
+  padding: 2rem 0;
+}
+
+.copyright {
+  text-align: center;
+}
