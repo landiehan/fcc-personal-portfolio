@@ -167,3 +167,122 @@ a {
   text-decoration: 2px underline dashed palevioletred;
   color: palevioletred;
 }
+
+/* projects section */
+.projects {
+  width: 95%;
+  max-width: 1200px;
+  margin: 6rem auto;
+}
+
+.projects-heading {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 4rem;
+}
+
+.project-tile {
+  border: 1px solid rgb(219, 229, 230);
+  --image-height: 28rem;
+  position: relative;
+}
+
+.project-preview {
+  display: block;
+  overflow: hidden;
+}
+
+.project-preview img {
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+  display: block;
+}
+
+.project-preview img:hover {
+  transform: scale(1.05);
+}
+
+.project-info {
+  padding: 1.5rem 3rem 10rem;
+}
+
+.project-lang {
+  display: flex;
+  font-weight: 600;
+}
+
+.project-lang > li {
+  margin-right: 0.8em;
+}
+
+.project-lang .html {
+  color: rgb(106, 190, 205);
+}
+
+.project-lang .scss {
+  color: palevioletred;
+}
+
+.project-lang .js {
+  color: orange;
+}
+
+.project-lang .react {
+  color: lightskyblue;
+}
+
+.project-lang .styled-components {
+  color: violet;
+}
+
+.project-heading {
+  margin: 1rem 0 1.5rem;
+  font-size: 1.5em;
+}
+
+.project-description {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: rgb(153, 153, 153);
+}
+
+.project-view {
+  position: absolute;
+  left: 0;
+  bottom: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.project-view .see-live {
+  font-size: 1.1em;
+  background-color: palevioletred;
+  color: white;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+}
+
+.project-view .source-code {
+  color: palevioletred;
+}
+
+@media only screen and (min-width: 768px) {
+  .project-preview img {
+    height: var(--image-height);
+  }
+
+  .project-info {
+    height: calc(100% - var(--image-height));
+  }
+}
