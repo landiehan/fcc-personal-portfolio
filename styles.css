@@ -140,6 +140,18 @@ a {
  100% { transform: rotate( 0.0deg) }
 }
 
+@media only screen and (max-width: 576px) {
+  .welcome-heading {
+    font-size: 2em;
+  }
+
+  .welcome-subheading {
+    font-size: 1.1em;
+    color: gray;
+    text-align: center;
+  }
+}
+
 /* about section */
 .about {
   height: calc(100vh - 64px);
@@ -168,6 +180,20 @@ a {
 .about a[href*="http"] {
   text-decoration: 2px underline dashed palevioletred;
   color: palevioletred;
+}
+
+@media only screen and (max-width: 576px) {
+  .about {
+    margin-top: -15vh;
+  }
+
+  .about-heading {
+    font-size: 3em;
+  }
+
+  .about-content {
+    padding: 0 2em;
+  }
 }
 
 /* projects section */
@@ -273,10 +299,12 @@ a {
   font-weight: 600;
   padding: 0.8rem 2rem;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .project-view .source-code {
   color: palevioletred;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
@@ -286,6 +314,14 @@ a {
 
   .project-info {
     height: calc(100% - var(--image-height));
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .projects-heading {
+    font-size: 2.2em;
+    text-align: left;
+    padding-left: 10px;
   }
 }
 
@@ -344,6 +380,14 @@ a {
   }
   to {
     transform: translateY(-1rem) rotate(15deg);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .contact-heading {
+    font-size: 2.2em;
+    text-align: center;
+    padding: 0 1em;
   }
 }
 
